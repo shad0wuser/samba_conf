@@ -1,4 +1,5 @@
-# Configure simple Samba Server
+## samba_conf
+**Configure simple Samba Server**
 
 Update & install `samba`
 ```bash
@@ -35,4 +36,17 @@ smbclient //ip_address/smb-vary
 or login with root user
 ```bash
 smbclient //ip_address/smb-vary -U root
+```
+Mount shared folder
+```bash
+mkdir -p /media/smb-{full,read,vary}
+mount -t cifs //192.168.1.254/smb-vary /media/smb-full/ -o username=root
+```
+for guest login
+```bash
+mount -t cifs //192.168.1.254/smb-vary /media/smb-vary/ -o username=anonymous
+```
+Show mounted partitions
+```bash
+df
 ```
