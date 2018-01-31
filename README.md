@@ -40,11 +40,11 @@ smbclient //ip_address/smb-vary -U root
 Mount shared folder
 ```bash
 mkdir -p /media/smb-{full,read,vary}
-mount -t cifs //192.168.1.254/smb-vary /media/smb-full/ -o username=root
+mount -t cifs //ip_address/smb-vary /media/smb-full/ -o username=root
 ```
 for guest login
 ```bash
-mount -t cifs //192.168.1.254/smb-vary /media/smb-vary/ -o username=anonymous
+mount -t cifs //ip_address/smb-vary /media/smb-vary/ -o username=anonymous
 ```
 Show mounted partitions
 ```bash
