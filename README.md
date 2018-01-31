@@ -1,5 +1,4 @@
-# samba_conf
-**Configure simple Samba Server**
+# Configure simple Samba Server
 
 Update & install `samba`
 ```bash
