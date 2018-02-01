@@ -8,6 +8,7 @@ apt-get install samba
 ```
 Downlaod configuration file
 ```bash
+apt-get install git
 git clone https://github.com/shad0wuser/samba_conf.git
 cp samba_conf/smb.conf /etc/samba/
 ```
